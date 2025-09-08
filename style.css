@@ -5,6 +5,8 @@
     --light-green-btn: #9FE2A1;
     --text-color: #333;
     --font-family: 'Poppins', sans-serif;
+    --dark-green-box: #0E4924;
+    --card-border-color: #A1D4AF;
 }
 
 body {
@@ -149,4 +151,136 @@ body {
 .label-bottom {
     bottom: 10%;
     left: 10%;
+}
+
+/* --- Promo Section --- */
+.promo-section {
+    background-color: var(--green-bg);
+    padding: 50px 20px;
+    text-align: center;
+    border-top: 2px solid #55e679;
+    border-bottom: 2px solid #3d8bff;
+}
+
+.promo-title {
+    font-size: 1.5rem;
+    color: var(--dark-green-text);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.promo-headline {
+    font-size: 2.2rem;
+    color: var(--dark-green-text);
+    font-weight: 700;
+    margin: 0;
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.timer-box {
+    background-color: var(--dark-green-box);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+}
+
+.timer-number {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.timer-unit {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.timer-colon {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark-green-box);
+}
+
+.promo-subtext {
+    color: var(--text-color);
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.klaim-button {
+    display: inline-block;
+    background: linear-gradient(to right, #ff6812, #ff8c4a);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 20px 40px;
+    border-radius: 50px;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* --- Fitur Section --- */
+.features-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.features-title {
+    color: var(--dark-green-text);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    border: 2px solid var(--card-border-color);
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.feature-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 1.2rem;
+    color: var(--dark-green-text);
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.feature-card p {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-top: 10px;
 }
