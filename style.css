@@ -1,72 +1,198 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0; /* Latar belakang untuk body */
+    overflow-x: hidden;
+}
+
+/* Navigasi */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+    color: #fff;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.nav-links span {
+    font-size: 0.7rem;
+}
+
+.login-btn {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-right: 15px;
+}
+
+.get-started-btn-nav {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+/* Bagian Hero */
+.hero-section {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 0 5%;
+    background: #008080; /* Warna utama latar belakang */
+    background: radial-gradient(circle at 10% 90%, #66b5b5, transparent 50%), 
+                radial-gradient(circle at 90% 10%, #66b5b5, transparent 50%), 
+                linear-gradient(225deg, #1f7b7b, #33abab);
+}
+
+.hero-content {
+    color: #fff;
+    width: 50%;
+    padding-right: 50px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.1;
     margin: 0;
 }
 
-.login-container {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 20px 0 40px;
 }
 
-.login-form h2 {
-    margin-bottom: 1.5rem;
+.get-started-btn-hero {
+    background-color: #fff;
+    border: none;
+    padding: 20px 50px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 5px 5px 0 0 #000;
+}
+
+/* Mockup Laptop */
+.laptop-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.laptop {
+    width: 600px;
+    height: 380px;
+    background-color: #d1d1d1;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    transform: rotateX(15deg) rotateZ(-10deg);
+    transform-style: preserve-3d;
+}
+
+.laptop-base {
+    width: 100%;
+    height: 20px;
+    background-color: #b1b1b1;
+    position: absolute;
+    bottom: -20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.laptop-screen {
+    width: 95%;
+    height: 90%;
+    background-color: #fce883;
+    position: absolute;
+    top: 5%;
+    left: 2.5%;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: radial-gradient(circle, #ffe66d 0%, #fce883 100%);
+}
+
+.reservation-form {
+    text-align: center;
+    padding: 20px;
+    width: 80%;
+}
+
+.reservation-form h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
     color: #333;
 }
 
-.input-group {
-    margin-bottom: 1rem;
-    text-align: left;
+.form-inputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 20px 0;
 }
 
-.input-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: #555;
-}
-
-.input-group input {
-    width: 95%;
-    padding: 0.75rem;
+.form-inputs select {
+    width: 32%;
+    padding: 10px 5px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 0.8rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
-button {
-    width: 100%;
-    padding: 0.75rem;
+.find-table-btn {
+    background-color: #4a90e2;
+    color: #fff;
     border: none;
-    background-color: #007bff;
-    color: white;
+    width: 100%;
+    padding: 15px;
     font-size: 1rem;
-    border-radius: 4px;
+    font-weight: 700;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #0056b3;
-}
-
-.signup-link {
-    margin-top: 1rem;
-    color: #555;
-}
-
-.signup-link a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.signup-link a:hover {
-    text-decoration: underline;
+.plate-icon {
+    width: 100px;
+    height: 100px;
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    border: 10px solid #ccc;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
 }

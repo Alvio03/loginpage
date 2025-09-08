@@ -3,24 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Login</title>
+    <title>Squarespace Mockup</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="login-container">
-        <form class="login-form">
-            <h2>Login</h2>
-            <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
+    <header class="navbar">
+        <div class="logo">SQUARESPACE</div>
+        <nav class="nav-links">
+            <a href="#">PRODUCTS <span>&#9660;</span></a>
+            <a href="#">TEMPLATES <span>&#9660;</span></a>
+            <a href="#">RESOURCES <span>&#9660;</span></a>
+        </nav>
+        <div class="auth-buttons">
+            <a href="#" class="login-btn">LOG IN</a>
+            <button class="get-started-btn-nav">GET STARTED</button>
+        </div>
+    </header>
+
+    <main class="hero-section">
+        <div class="hero-content">
+            <h1>EVERYTHING TO SELL ANYTHING</h1>
+            <p>Start your free website trial today. No credit card required.</p>
+            <button class="get-started-btn-hero">GET STARTED</button>
+        </div>
+        <div class="laptop-container">
+            <div class="laptop">
+                <div class="laptop-screen">
+                    <div class="reservation-form">
+                        <h2>Make a reservation</h2>
+                        <div class="form-inputs">
+                            <select>
+                                <option>2 people</option>
+                            </select>
+                            <select>
+                                <option>Dec 12, 2022</option>
+                            </select>
+                            <select>
+                                <option>7:00 PM</option>
+                            </select>
+                        </div>
+                        <button class="find-table-btn">FIND A TABLE</button>
+                        <div class="plate-icon"></div>
+                    </div>
+                </div>
+                <div class="laptop-base"></div>
             </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit">Masuk</button>
-            <p class="signup-link">Belum punya akun? <a href="#">Daftar sekarang</a></p>
-        </form>
-    </div>
+        </div>
+    </main>
 </body>
 </html>
