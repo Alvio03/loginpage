@@ -86,7 +86,9 @@ body {
     align-items: center;
     justify-content: center;
     padding: 50px;
-    background-color: var(--green-bg);
+    background-image: url('background.jpg'); /* Tambahkan baris ini */
+    background-size: cover; /* Properti tambahan agar gambar menutupi seluruh area */
+    background-position: center center; /* Properti tambahan untuk memposisikan gambar di tengah */
 }
 
 .hero-content {
@@ -95,7 +97,7 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 48px;
+    font-size: 37px;
     line-height: 1.2;
     color: var(--dark-green-text);
     font-weight: 700;
@@ -120,9 +122,9 @@ body {
 }
 
 .button-chat {
-    background-color: var(--light-green-btn);
+    background-color: var(--faq-text-color);
     color: var(--dark-green-text);
-    border-radius: 50px;
+    border-radius: 40px;
 }
 
 .button-chat .icon-chat {
